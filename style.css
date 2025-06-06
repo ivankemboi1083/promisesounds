@@ -96,7 +96,7 @@ header .nav-links li a:hover {
 /* Hero Section */
 .hero {
 background:linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.8)),
-            url('./images/BulkResizePhotos.com/hero_bg.webp') no-repeat center center;
+            url('./images/hero.jpg') no-repeat center center;
 
 
   background-size: cover;
@@ -109,6 +109,7 @@ background:linear-gradient(rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.8)),
   justify-content: center;
   padding: 160px 40px;
   margin-top: 40px;
+  background-color: transparent;
   
 }
 
@@ -629,32 +630,48 @@ footer {
 /* Responsive Design (Desktop First) */
 @media (max-width: 768px) {
   
-    #nav-links {
-    display: none;
-    flex-direction: column;
-  
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #222;
-    padding: 15px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    z-index: 100;
-   
-  }
+   #nav-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 20px;
 
-  #nav-links.show {
-    display: flex;
-    gap: 20px;
-  }
+  padding: 25px 30px;          /* More padding for bigger tap area */
+  border-radius: 15px;         /* Slightly rounder for smoothness */
+  background-color: #222;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Stronger shadow for pop */
+  z-index: 100;
 
-  .hamburger {
-    display: block;
-    transition: transform 0.3s ease;
-  }
+  width: 250px;                /* Fixed width so it’s noticeable */
+  font-size: 1.3rem;           /* Bigger text for readability */
+}
+
+#nav-links.show {
+  display: flex;
+  gap: 30px;                   /* More space between links */
+}
+
+#nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 10px;          /* Bigger click area on each link */
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+#nav-links a:hover {
+  background-color: #444;      /* Slight hover effect to show interactivity */
+}
+
+.hamburger {
+  display: block;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  width: 35px;                 /* Bigger hamburger icon */
+  height: 30px;
+}
+
  /* hero section */
    .hero {
     background-position: center top;

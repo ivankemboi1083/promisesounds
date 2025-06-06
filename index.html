@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="icon" href="./images/favicon.png" type="image/png" />
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -53,26 +54,26 @@
   <h2>Our Services</h2>
   <div class="services-grid">
    
-    <div class="service-card">
+    <div class="service-card" data-aos="fade-up" data-aos-delay=" 100ms">
       <img src="/images/BulkResizePhotos.com/instrumentSales.webp" alt="Instrument Sales">
       <h3>Instrument Sales</h3>
       <p>Wide range of quality instruments at competitive prices.</p>
     </div>
      
-    <div class="service-card">
+    <div class="service-card" data-aos="fade-up" data-aos-delay=" 100ms">
       <img src="images/BulkResizePhotos.com/soundHire.webp" alt="Sound for Hire">
       <h3>Sound for Hire</h3>
       <p>Affordable, high-quality sound and PA systems for every occasion.</p>
     </div> 
     
 
-    <div class="service-card">
+    <div class="service-card" data-aos="fade-up" data-aos-delay=" 100ms">
       <img src="/images/BulkResizePhotos.com/soundInstallation.webp" alt="Sound Installation">
       <h3>Sound Installation</h3>
       <p>Professional setup for events, venues, and personal use.</p>
     </div>
 
-<div class="service-card repairCard">
+<div class="service-card repairCard" data-aos="fade-up" data-aos-delay=" 100ms">
   <img src="images/BulkResizePhotos.com/soundRepair.webp" alt="Sound Repair & Maintenance">
   <h3>Sound Repair & Maintenance</h3>
   <p>Fixing faulty gear and regular checkups to keep your systems performing flawlessly.</p>
@@ -103,9 +104,9 @@
     </div>
 
     <div class="about-images-row">
-      <img src="images/BulkResizePhotos.com/shopInside.webp" alt="Promise Sounds Team">
-      <img src="images/BulkResizePhotos.com/weddingSetup.webp" alt="Sound Equipment Setup">
-      <img src="images/BulkResizePhotos.com/shopPromiseSounds.webp" alt="Live Event Vibes">
+      <img src="images/BulkResizePhotos.com/shopInside.webp" alt="Promise Sounds Team"data-aos="fade-left" data-aos-delay=" 100ms">
+      <img src="images/BulkResizePhotos.com/weddingSetup.webp" alt="Sound Equipment Setup" data-aos="fade-left" data-aos-delay=" 100ms">
+      <img src="images/BulkResizePhotos.com/shopPromiseSounds.webp" alt="Live Event Vibes"data-aos="zoom-in" data-aos-delay=" 100ms">
     </div> 
   </div>
 </section>
@@ -114,24 +115,24 @@
   <div class="contact-container">
     
     <!-- Location Info -->
-    <div class="location-info">
+    <div class="location-info" >
       <h2>Our Location</h2>
-      <div class="info-item">
+      <div class="info-item" data-aos="fade-up" data-aos-delay=" 100ms">
         <i class="fa-solid fa-location-dot"></i>
         <p>Tamarind place ground floor room G7-Eldoret Town </p>
       </div>
-      <div class="info-item">
+      <div class="info-item" data-aos="fade-up" data-aos-delay=" 100ms">
         <i class="fa-solid fa-phone"></i>
         <p>+254 719 503 269</p>
       </div>
-      <div class="info-item">
+      <div class="info-item" data-aos="fade-up" data-aos-delay=" 100ms">
         <i class="fa-solid fa-clock"></i>
         <p>Mon - Sat: 8:00am - 6:00pm</p>
       </div>
     </div>
 
     <!-- Contact Form -->
-    <div class="message-form">
+    <div class="message-form" data-aos="fade-up" data-aos-delay=" 150ms">
       <h2>Leave a Message</h2>
       <form>
         <input type="text" placeholder="Your Name" required>
@@ -162,6 +163,15 @@
 
 <!-- particles services section -->
  
- 
+ <!-- AOS -->
+  <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800, 
+    once: true     
+  });
+</script>
+
 </body>
 </html>
